@@ -11,6 +11,7 @@
         }
     ],
     "repositories": [
+        { "type": "vcs", "url": "https://github.com/adamwojs/date-based-publisher.git" },
         { "type": "composer", "url": "https://updates.ez.no/ttl" }
     ],
     "replace": {
@@ -52,7 +53,7 @@
         "ezsystems/studio-ui-bundle": "^2.0@dev",
         "ezsystems/ezstudio-form-builder": "^2.0@dev",
         "ezsystems/ezstudio-notifications": "^2.0@dev",
-        "ezsystems/date-based-publisher": "^2.0@dev",
+        "ezsystems/date-based-publisher": "dev-publication_schedule_poc_react@dev",
         "ezsystems/landing-page-fieldtype-bundle": "^2.0@dev",
         "ezsystems/flex-workflow": "^2.0@dev",
         "ezsystems/ezstudio-cron": "^1.0@dev",

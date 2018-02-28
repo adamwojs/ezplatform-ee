@@ -50,3 +50,6 @@ ezplatform.ee.landing_page:
 
 fos.js_routing:
     resource: '@FOSJsRoutingBundle/Resources/config/routing/routing.xml'
+
+ezplatform.ee.date_based_publisher_schedule:
+    resource: '@EzSystemsDateBasedPublisherBundle/Resources/config/routing_schedule.yml'
