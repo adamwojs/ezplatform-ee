@@ -63,3 +63,6 @@ platform1_admin_route:
     defaults:
         path: /admin
         permanent: true
+
+ezplatform.ee.date_based_publisher_schedule:
+    resource: '@EzSystemsDateBasedPublisherBundle/Resources/config/routing_schedule.yml'
