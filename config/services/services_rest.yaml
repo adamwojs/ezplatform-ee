@@ -1,0 +1,10 @@
+services:
+    App\Calendar\REST\Visitor\HolidayEventVisitor:
+        parent: ezpublish_rest.output.value_object_visitor.base
+        tags:
+            - { name: ezpublish_rest.output.value_object_visitor, type: App\Calendar\Event\HolidayEvent }
+
+    App\Calendar\REST\Visitor\PrivateEventVisitor:
+        parent: ezpublish_rest.output.value_object_visitor.base
+        tags:
+            - { name: ezpublish_rest.output.value_object_visitor, type: App\Calendar\Event\PrivateEvent }

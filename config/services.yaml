@@ -26,3 +26,30 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+    App\Calendar\EventType\HolidayEventType:
+        tags:
+            - { name: ezplatform.calendar.event_type }
+
+    App\Calendar\EventSourceFactory\HolidaysEventSourceFactory:
+        arguments:
+            $eventType: '@App\Calendar\EventType\HolidayEventType'
+
+    App\Calendar\EventSource\HolidaysEventSource:
+        class: EzSystems\EzPlatformCalendar\Calendar\EventSource\InMemoryEventSource
+        factory: 'App\Calendar\EventSourceFactory\HolidaysEventSourceFactory:createEventSource'
+        tags:
+            - { name: ezplatform.calendar.event_source }
+
+    App\Calendar\EventType\PrivateEventType:
+        tags:
+            - { name: ezplatform.calendar.event_type }
+
+    App\Calendar\EventSourceFactory\PrivateEventsSourceFactory:
+        arguments:
+            $eventType: '@App\Calendar\EventType\PrivateEventType'
+
+    App\Calendar\EventSource\PrivateEventSource:
+        class: EzSystems\EzPlatformCalendar\Calendar\EventSource\InMemoryEventSource
+        factory: 'App\Calendar\EventSourceFactory\PrivateEventsSourceFactory:createEventSource'
+        tags:
+            - { name: ezplatform.calendar.event_source }
