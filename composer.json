@@ -23,6 +23,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/ezsystems/date-based-publisher"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/repository-forms"
         }
     ],
     "replace": {
@@ -67,7 +71,7 @@
         "ezsystems/ezplatform-workflow": "^1.1@dev",
         "ezsystems/ezpublish-kernel": "dev-php74_support_25 as 7.5.x-dev",
         "ezsystems/flex-workflow": "^3.2@dev",
-        "ezsystems/repository-forms": "^2.5@dev",
+        "ezsystems/repository-forms": "dev-php74_support_25 as 2.5.x-dev",
         "ezsystems/symfony-tools": "~1.1.0@dev",
         "friendsofsymfony/jsrouting-bundle": "^1.6.3",
         "gregwar/captcha-bundle": "^2.0",
