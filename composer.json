@@ -30,6 +30,10 @@
         "4d56c241-4986-40b8-b6ca-fdc0089cc4df": {
             "type": "vcs",
             "url": "https://github.com/ezsystems/BehatBundle"
+        },
+        "dupa-rzepa-kalarepa": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-form-builder"
         }
     },
     "require": {
@@ -47,7 +51,7 @@
         "ezsystems/ezplatform-cron": "~3.0.0@dev",
         "ezsystems/ezplatform-design-engine": "~3.0.0@dev",
         "ezsystems/ezplatform-ee-installer": "~3.0.0@dev",
-        "ezsystems/ezplatform-form-builder": "~2.0.0@dev",
+        "ezsystems/ezplatform-form-builder": "dev-php74_support as 2.0.0.x-dev",
         "ezsystems/ezplatform-graphql": "~2.0.0@dev",
         "ezsystems/ezplatform-http-cache": "~2.0.0@dev",
         "ezsystems/ezplatform-http-cache-fastly": "~2.0.0@dev",
